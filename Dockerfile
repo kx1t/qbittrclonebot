@@ -23,6 +23,7 @@ apt-get update && \
 	software-properties-common \
 	python3-pip && \
 	python3 -m pip install telegram python-telegram-bot --upgrade && \
+	python3 -m pip install --upgrade setuptools && \
  #curl -s https://bintray.com/user/downloadSubjectPublicKey?username=fedarovich | apt-key add - && \
  #apt-key adv --keyserver hkp://keyserver.ubuntu.com:11371 --recv-keys 7CA69FC4 && \
  #echo "deb http://ppa.launchpad.net/qbittorrent-team/qbittorrent-stable/ubuntu bionic main" >> /etc/apt/sources.list.d/qbitorrent.list && \
