@@ -15,15 +15,18 @@ XDG_DATA_HOME="/config"
 # add repo and install qbitorrent
 RUN \
  echo "***** add qbitorrent repositories ****" && \
-apt-get update && \
+ apt-get update && \
  apt-get install -y \
         gnupg \
         python3 \
 	apt-transport-https ca-certificates \
 	software-properties-common \
 	python3-pip && \
-	python3 -m pip install telegram python-telegram-bot --upgrade && \
-	python3 -m pip install --upgrade setuptools && \
+	python3-setuptools && \
+	python3-dev && \
+ python3 -m pip install telegram python-telegram-bot --upgrade && \
+ python3 -m pip install --upgrade setuptools && \
+ python3 -m pip install --upgrade pip && \
  #curl -s https://bintray.com/user/downloadSubjectPublicKey?username=fedarovich | apt-key add - && \
  #apt-key adv --keyserver hkp://keyserver.ubuntu.com:11371 --recv-keys 7CA69FC4 && \
  #echo "deb http://ppa.launchpad.net/qbittorrent-team/qbittorrent-stable/ubuntu bionic main" >> /etc/apt/sources.list.d/qbitorrent.list && \
