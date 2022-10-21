@@ -22,8 +22,8 @@ RUN \
 	apt-transport-https ca-certificates \
 	software-properties-common \
 	python3-pip && \
-	python3-setuptools && \
-	python3-dev && \
+	python-setuptools && \
+	python-dev && \
  python3 -m pip install telegram python-telegram-bot --upgrade && \
  python3 -m pip install --upgrade setuptools && \
  python3 -m pip install --upgrade pip && \
